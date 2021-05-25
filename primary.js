@@ -28,7 +28,7 @@ searchBar.addEventListener("input", function(e) {
 	}
 	suggs.innerHTML = ""
 	for (let i = 0; i < suggestions.length; i++) {
-		suggs.innerHTML += suggestions[i] + "?<br>"
+		suggs.innerHTML += suggestions[i] + "<br>"
 	}
 });
 

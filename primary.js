@@ -5,7 +5,11 @@ document.addEventListener('init', function(event) {
 	if (page.matches("#first-page")) {
 		page.querySelector('ons-toolbar.center').innerHTML = "Boycott App";
 		page.querySelector('ons-button').onclick = function() {
-			ons.notification.alert("Loser!");
+			getUserMedia({
+				video: {
+					facingMode: {exact: "environment"},
+				},
+			});
 		}
 	}
 });
